@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Twitter X, Facebook & WhatsApp Voice Transcriber</title>
+    <title>Privacy Policy - Voice Transcriber Pro</title>
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 40px 20px; background-color: #f9f9f9; }
         .container { background-color: #fff; padding: 40px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
@@ -18,38 +18,37 @@
 <body>
     <div class="container">
         <h1>Privacy Policy</h1>
-        <p class="effective-date">Last Updated: June 15, 2024</p>
+        <p class="effective-date">Last Updated: June 15, 2024 (v1.1.6)</p>
 
-        <p>This Privacy Policy explains how <strong>Twitter X, Facebook & WhatsApp Voice Transcriber</strong> handles user data. Our extension is designed with a "Privacy-First" approach.</p>
+        <p>This Privacy Policy explains how <strong>Twitter X, Facebook & WhatsApp Voice Transcriber</strong> handles user data. Our extension is built on a "Privacy-by-Design" philosophy.</p>
 
-        <h2>1. Data Collection & Usage</h2>
-        <p>The Extension handles the following types of data to provide its core service:</p>
+        <h2>1. Data Collection & Transient Processing</h2>
+        <p>The Extension handles the following data types locally and transiently:</p>
         <ul>
-            <li><strong>Audio Data:</strong> When you click the "Transcribe" button, the extension intercepts the audio stream of that specific voice message. This data is processed in real-time. We use high-accuracy AI models to transcribe this audio. The audio data is processed transiently and <strong>is never stored or archived</strong> by the developer.</li>
-            <li><strong>Personal Communications:</strong> The extension accesses the audio of the voice message to provide a text transcription. This content is processed and displayed to you within your browser session and is not collected or stored on our servers.</li>
-            <li><strong>Authentication Information:</strong> If you choose to use your own API keys (Google Gemini, OpenAI, AssemblyAI, or Deepgram), they are stored locally on your device using <code>chrome.storage.sync</code> and are only used to authenticate requests to the respective AI providers.</li>
+            <li><strong>Audio Data:</strong> When you click "Transcribe," the extension captures the audio stream of that specific voice message. This data is processed in real-time. It is <strong>never stored, logged, or archived</strong> by the developer or the proxy server.</li>
+            <li><strong>Personal Communications:</strong> The extension accesses voice message content solely to provide the transcription service. All transcriptions are displayed only within your local browser session.</li>
+            <li><strong>Local Configuration:</strong> We store your API keys and UI preferences (such as the "What's New" acknowledgment) locally on your device using <code>chrome.storage</code>.</li>
         </ul>
 
-        <h2>2. Third-Party Data Sharing</h2>
-        <p>To provide transcription and translation, data is securely transmitted to the following providers based on your settings:</p>
+        <h2>2. Third-Party Data Handling</h2>
+        <p>To provide AI services, data is transmitted to the following endpoints based on your configuration:</p>
         <ul>
-            <li><strong>Google Gemini (via our Vercel Proxy):</strong> Audio data is sent for transcription when using the free tier.</li>
-            <li><strong>AssemblyAI, OpenAI, or Deepgram:</strong> Audio data is sent for transcription if you use your own API key.</li>
-            <li><strong>Google Translate:</strong> Transcribed text is sent for translation if the feature is enabled.</li>
-        </ul>
-        <p>We do not sell, trade, or rent user data to any third parties.</p>
-
-        <h2>3. Permissions Justification</h2>
-        <ul>
-            <li><strong>Storage:</strong> Used to save your API keys and language preferences locally.</li>
-            <li><strong>Host Permissions (WhatsApp, Facebook, X):</strong> Necessary to detect voice messages and inject the "Transcribe" button into the chat interface across supported platforms.</li>
+            <li><strong>Google Gemini (via Vercel Proxy):</strong> Audio data is sent for transcription when using the Free Tier. The proxy acts as a secure pass-through and does not retain any data.</li>
+            <li><strong>AssemblyAI, OpenAI, or Deepgram:</strong> Data is sent directly to these providers if you use a personal API key.</li>
+            <li><strong>Google Translate:</strong> Text is sent for translation only if you enable the translation feature.</li>
         </ul>
 
-        <h2>4. User Rights</h2>
-        <p>You can delete all data stored by the extension at any time by clearing the extension settings or uninstalling the extension.</p>
+        <h2>3. Permissions & Security</h2>
+        <ul>
+            <li><strong>Host Permissions:</strong> Access is limited to WhatsApp, Facebook Messenger, and Twitter (X) to detect and transcribe voice messages.</li>
+            <li><strong>No Tracking:</strong> We do not use cookies, analytics, or any tracking scripts to monitor user behavior.</li>
+        </ul>
+
+        <h2>4. User Control</h2>
+        <p>You have full control over your data. You can clear your transcription history by refreshing the page and delete all settings by uninstalling the extension.</p>
 
         <h2>5. Contact</h2>
-        <p>For any privacy-related questions, contact us at: <a href="mailto:143syedabukhari@gmail.com">143syedabukhari@gmail.com</a></p>
+        <p>For support or privacy inquiries: <a href="mailto:143syedabukhari@gmail.com">143syedabukhari@gmail.com</a></p>
     </div>
 </body>
 </html>
